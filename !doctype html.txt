@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shakir Dental Hospital</title>
+  <style>
+    body{font-family:Arial, sans-serif;background:#f7f9fc;color:#111;margin:0;padding:0}
+    .wrap{max-width:1000px;margin:28px auto;padding:18px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    h1{margin:0;color:#0b6cf6}
+    nav a{margin-left:12px;color:#555;text-decoration:none;font-weight:600}
+    .card{background:#fff;padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(9,30,66,.06);margin-top:16px}
+    label{display:block;margin-top:8px;font-weight:700}
+    input,select,textarea{width:100%;padding:10px;margin-top:6px;border-radius:6px;border:1px solid #e6eef8}
+    button{margin-top:12px;padding:10px 14px;background:#0b6cf6;color:#fff;border:0;border-radius:8px;cursor:pointer}
+    footer{text-align:center;color:#6b7280;margin-top:18px;padding:12px}
+    .muted{color:#6b7280}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Shakir Dental Hospital</h1>
+        <div class="muted">Quality dental care • Comfortable • Reliable</div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about" class="card">
+      <h2>About Us</h2>
+      <p>हम पेशेवर दंत चिकित्सा सेवाएँ देते हैं — preventive, restorative और cosmetic dentistry।</p>
+    </section>
+
+    <section id="doctors" class="card">
+      <h2>Doctors</h2>
+      <ul>
+        <li>Dr. Amit Sharma — Prosthodontist</li>
+        <li>Dr. Bhavna Singh — Endodontist</li>
+        <li>Dr. Chetan Verma — Orthodontist</li>
+      </ul>
+    </section>
+
+    <section id="appointment" class="card">
+      <h2>Book Appointment (Demo)</h2>
+      <form onsubmit="demoSubmit(event)">
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+
+        <label>Mobile Number</label>
+        <input type="tel" id="phone" placeholder="10-digit mobile" required>
+
+        <label>Choose Doctor</label>
+        <select id="doctor">
+          <option>Dr. Amit Sharma</option>
+          <option>Dr. Bhavna Singh</option>
